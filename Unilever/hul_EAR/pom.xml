@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	
+	
+	<parent>	
+		<groupId>com.Unilever.project</groupId>
+		<artifactId>hul_ROOT</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../hul_ROOT</relativePath>
+    </parent>
+	
+	
+	<groupId>com.Unilever.project</groupId>
+	<artifactId>hul_EAR</artifactId>
+	<packaging>ear</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>hul_EAR</name>
+  
+  
+  
+  <dependencies>
+    
+	<dependency>
+		<groupId>com.Unilever.project</groupId>
+		<artifactId>hul_001</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<type>jar</type>
+    </dependency>	
+	<dependency>
+		<groupId>com.Unilever.project</groupId>
+		<artifactId>hul_002</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<type>jar</type>
+    </dependency>	
+	<dependency>
+		<groupId>com.Unilever.project</groupId>
+		<artifactId>hul_003</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<type>war</type>
+    </dependency>	
+	<dependency>
+		<groupId>com.Unilever.project</groupId>
+		<artifactId>hul_004</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<type>war</type>
+    </dependency>	
+	
+  </dependencies>
+  
+  
+  
+  <distributionManagement>
+	<repository>
+		<id>releases</id>
+		<name>Release Repository</name>
+		<url>http://desktop-v1vn1pd:8081/nexus/content/repositories/releases/</url>
+	</repository>
+	
+	<snapshotRepository>
+		<id>snapshots</id>
+		<name>Snapshot Repository</name>
+		<url>http://desktop-v1vn1pd:8081/nexus/content/repositories/snapshots/</url>
+	</snapshotRepository>
+  </distributionManagement>    
+  
+  
+</project>
